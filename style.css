@@ -1,18 +1,21 @@
+html {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
 body {
   font-family: 'Roboto', sans-serif;
   color: #eee;
-  height: 170vh;
-  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
 }
 
 .header {
   background-color: #1f2937;
-  height: 20vh;
-  padding-left: 9rem;
-  padding-right: 9rem;
-  padding-bottom: 16rem;
+  padding: 0 7rem 7rem 7rem;
 }
 
 .header1 {
@@ -44,8 +47,13 @@ body {
 }
 
 .image-holder {
-  width: 40rem;
+  width: 25rem;
   background: #6d747d;
+  place-items: center;
+}
+
+.image-holder p {
+  padding: 7rem 6rem;
 }
 
 .button {
@@ -59,7 +67,6 @@ body {
 
 .main {
   background-color: #eee;
-  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,22 +75,43 @@ body {
 
 .main1 {
   background: #eee;
-  height: 23vh;
   padding: 3rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .random {
   color: black;
-  margin-left: 12rem;
+  margin: 0 0 0 34rem;
   font-weight: 1700;
+  justify-content: center;
 }
-
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .card {
   display: flex;
   justify-content: space-evenly;
   gap: 3rem;
+  justify-content: center;
+}
+
+.card-title {
+  color: #1f2937;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 0 0 0 0;
+  padding: 0 10rem 0 10rem;
+}
+
+.card-title1 {
+  justify-content: center;
 }
 
 .card1,
@@ -92,14 +120,18 @@ body {
 .card4 {
   border-style: ridge;
   border-color: #3b82f6;
+  color: #1f2937;
   border-radius: 0.5rem;
-  width: 9rem;
-  height: 8rem;
+  width: 16rem;
+  height: 13rem;
+}
+
+.card1 > p {
+  padding: 14rem;
 }
 
 .main2 {
   background: #e5e7eb;
-  height: 26vh;
   padding: 3rem;
 }
 
@@ -107,21 +139,21 @@ body {
   font-size: 36px;
   font-style: light italic;
   color: #1f2937;
+  padding: 0 7rem 0 7rem;
 }
 
 .owner {
   color: black;
+  padding: 0 7rem 0 7rem;
 }
 
 .main3 {
   background-color: #3b82f6;
-  border: 25px solid #eee;
-  border-radius: 3.2rem;
+  border: 57px solid #eee;
   display: flex;
   padding: 2.9rem;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 18rem;
 }
 
 .final-main {
@@ -141,8 +173,8 @@ body {
 
 .footer {
   background-color: #1f2937;
-  height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 3rem;
 }
